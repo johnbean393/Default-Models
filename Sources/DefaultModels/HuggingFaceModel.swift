@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct HuggingFaceModel: Codable {
+public struct HuggingFaceModel: Codable, Hashable {
 	
 	/// Initializer
 	init(
