@@ -28,6 +28,28 @@ public class DefaultModels {
 		}
 	}
 	
+	/// The reccomended model for the device, of type ``HuggingFaceModel``
+	public static var recommendedModel: HuggingFaceModel {
+		get async {
+			// Get list of models
+			let models: [HuggingFaceModel] = await self.models
+			// Get baseline model
+			let minModel: HuggingFaceModel = models.sorted(by: {
+				$0.minRam < $1.minRam
+			}).first!
+			// Get top end model that can be run
+			if let maxModel: HuggingFaceModel = models.filter({
+				$0.canRun()
+			}).sorted(by: {
+				$0.mmluScore > $1.mmluScore
+			}).first {
+				return maxModel
+			} else {
+				return minModel
+			}
+		}
+	}
+	
 	/// Function to get online models
 	private static func getOnlineModels() async -> [HuggingFaceModel] {
 		// Define the URL for fetching models
