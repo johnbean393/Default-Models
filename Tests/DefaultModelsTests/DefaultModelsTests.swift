@@ -9,7 +9,7 @@ func exportModelJson() async throws {
 	// Initialize the encoder
 	let encoder: JSONEncoder = JSONEncoder()
 	// Define JSON file URL
-	let jsonUrl: URL = URL(fileURLWithPath: "/Users/bj/Library/Application Support/Magic Sorter/Sorted Land/Computer DN/Xcode Apps/Misc/Sidekick/Models/models.json")
+	let jsonUrl: URL = URL(fileURLWithPath: "/Users/bj/Library/Application Support/Magic Sorter/Sorted Land/Computer DN/Xcode Apps/Misc/Sidekick/Models/DefaultModels/models.json")
 	// Save models to JSON file
 	do {
 		// Convert models to data
