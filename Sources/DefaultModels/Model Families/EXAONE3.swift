@@ -11,7 +11,9 @@ public class EXAONE3: ModelSet {
 	
 	/// An array of `Exaone 3` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
-		EXAONE3.exaone_3Pt5_2pt4b
+		EXAONE3.exaone_3Pt5_2pt4b,
+		EXAONE3.exaone_3Pt5_7pt8b,
+		EXAONE3.exaone_3Pt5_32b
 	]
 	
 	/// Static constant for the EXAONE 3.5 2.4B model

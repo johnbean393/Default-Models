@@ -5,7 +5,7 @@ import Testing
 @Test
 func exportModelJson() async throws {
 	// Get list of models
-	let models: [HuggingFaceModel] = await DefaultModels.models
+	let models: [HuggingFaceModel] = DefaultModels.hardcodedModels
 	// Initialize the encoder
 	let encoder: JSONEncoder = JSONEncoder()
 	// Define JSON file URL

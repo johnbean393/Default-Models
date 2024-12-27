@@ -13,18 +13,27 @@ public class DefaultModels {
 	private static let modelFamilies: [any ModelSet.Type] = [
 		LLaMa3.self,
 		Gemma2.self,
-		Qwen2.self
+		Qwen2.self,
+		Ministral.self,
+		EXAONE3.self
 	]
 	
 	/// All default models that can be run by the device, in an array of `HuggingFaceModel`
 	public static var models: [HuggingFaceModel] {
 		get async {
+			let onlineModels: [HuggingFaceModel] = await Self.getOnlineModels()
+			print("Retrieved \(onlineModels.count) models.")
+			return Array(Set(Self.hardcodedModels + onlineModels))
+		}
+	}
+	
+	/// All default hardcoded models that can be run by the device, in an array of `HuggingFaceModel`
+	public static var hardcodedModels: [HuggingFaceModel] {
+		get {
 			let hardcodedModels: [HuggingFaceModel] = self.modelFamilies.map { family in
 				family.models
 			}.reduce([], +)
-			let onlineModels: [HuggingFaceModel] = await Self.getOnlineModels()
-			print("Retrieved \(onlineModels.count) models.")
-			return Array(Set(hardcodedModels + onlineModels))
+			return hardcodedModels
 		}
 	}
 	
