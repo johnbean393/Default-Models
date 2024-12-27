@@ -15,13 +15,13 @@ public struct HuggingFaceModel: Codable, Hashable {
 		minRam: Int,
 		minGpuTflops: Double,
 		mmluScore: Float,
-		type: ModelType = .normal
+		capabilities: [Capabilities] = []
 	) {
 		self.urlString = urlString
 		self.minRam = minRam
 		self.minGpuTflops = minGpuTflops
 		self.mmluScore = mmluScore
-		self.type = type
+		self.capabilities = capabilities
 	}
 	
 	/// The URL of the model's in type `String`
@@ -86,13 +86,13 @@ public struct HuggingFaceModel: Codable, Hashable {
 		return device.flops
 	}
 	
-	/// The model's type, of type ``ModelType``
-	public var type: ModelType
+	/// The model's capalilities, of type ``[Capabilities]``
+	public var capabilities: [Capabilities]
 	
 	/// The type of the model
-	public enum ModelType: CaseIterable, Codable {
-		case normal
+	public enum Capabilities: CaseIterable, Codable {
 		case reasoning
+		case imageInput
 	}
 	
 }

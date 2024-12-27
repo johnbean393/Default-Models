@@ -9,7 +9,7 @@ import Foundation
 
 public class Qwen2: ModelSet {
 	
-	/// An array of `Qwen2` models, of type ``HuggingFaceModel``
+	/// An array of `Qwen 2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Qwen2.qwen_2Pt5_1pt5b,
 		Qwen2.qwen_2pt5_3b,
@@ -56,7 +56,7 @@ public class Qwen2: ModelSet {
 		minRam: 36,
 		minGpuTflops: 16.2,
 		mmluScore: 83.3,
-		type: .reasoning
+		capabilities: [.reasoning]
 	)
 	
 }
