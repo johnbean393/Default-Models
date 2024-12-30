@@ -11,18 +11,23 @@ public struct HuggingFaceModel: Codable, Hashable {
 	
 	/// Initializer
 	init(
+		params: Float,
 		urlString: String,
 		minRam: Int,
 		minGpuTflops: Double,
 		mmluScore: Float,
-		capabilities: [Capabilities] = []
+		specializations: [Specializations] = []
 	) {
+		self.params = params
 		self.urlString = urlString
 		self.minRam = minRam
 		self.minGpuTflops = minGpuTflops
 		self.mmluScore = mmluScore
-		self.capabilities = capabilities
+		self.specializations = specializations
 	}
+	
+	/// Number of billions of parameters, in type `Float`
+	public var params: Float
 	
 	/// The URL of the model's in type `String`
 	public var urlString: String
@@ -86,13 +91,16 @@ public struct HuggingFaceModel: Codable, Hashable {
 		return device.flops
 	}
 	
-	/// The model's capalilities, of type ``[Capabilities]``
-	public var capabilities: [Capabilities]
+	/// The model's specialties, of type ``[Specializations]``
+	public var specializations: [Specializations]
 	
-	/// The type of the model
-	public enum Capabilities: CaseIterable, Codable {
-		case reasoning
-		case imageInput
+	/// The model's specialties
+	public enum Specializations: String, CaseIterable, Codable {
+		case coding = "Coding"
+		case math = "Math"
+		case reasoning = "Reasoning"
+		case imageInput = "Accepts Image Input"
+		case fullyOpenSource = "Fully Open Source"
 	}
 	
 }

@@ -18,6 +18,7 @@ public class EXAONE3: ModelSet {
 	
 	/// Static constant for the EXAONE 3.5 2.4B model
 	private static let exaone_3Pt5_2pt4b: HuggingFaceModel = HuggingFaceModel(
+		params: 2.4,
 		urlString: "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-GGUF/resolve/main/EXAONE-3.5-2.4B-Instruct-Q8_0.gguf?download=true",
 		minRam: 8,
 		minGpuTflops: 3.5,
@@ -26,6 +27,7 @@ public class EXAONE3: ModelSet {
 	
 	/// Static constant for the EXAONE 3.5 7.8B model
 	private static let exaone_3Pt5_7pt8b: HuggingFaceModel = HuggingFaceModel(
+		params: 7.8,
 		urlString: "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF/resolve/main/EXAONE-3.5-7.8B-Instruct-Q8_0.gguf?download=true",
 		minRam: 18,
 		minGpuTflops: 6.8,
@@ -34,6 +36,7 @@ public class EXAONE3: ModelSet {
 	
 	/// Static constant for the EXAONE 3.5 32B model
 	private static let exaone_3Pt5_32b: HuggingFaceModel = HuggingFaceModel(
+		params: 32,
 		urlString: "https://huggingface.co/bartowski/EXAONE-3.5-32B-Instruct-GGUF/resolve/main/EXAONE-3.5-32B-Instruct-IQ4_XS.gguf?download=true",
 		minRam: 36,
 		minGpuTflops: 16.2,
