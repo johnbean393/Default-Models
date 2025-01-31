@@ -96,11 +96,14 @@ public struct HuggingFaceModel: Codable, Hashable {
 	
 	/// The model's specialties
 	public enum Specializations: String, CaseIterable, Codable {
+		
+		case fineTuned = "Fine Tuned"
 		case coding = "Coding"
 		case math = "Math"
 		case reasoning = "Reasoning"
 		case imageInput = "Accepts Image Input"
 		case fullyOpenSource = "Fully Open Source"
+		
 	}
 	
 }

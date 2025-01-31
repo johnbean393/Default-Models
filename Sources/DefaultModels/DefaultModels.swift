@@ -14,6 +14,7 @@ public class DefaultModels {
 		LLaMa3.self,
 		Gemma2.self,
 		Qwen2.self,
+		MistralSmall.self,
 		Ministral.self,
 		EXAONE3.self,
 		OLMo2.self
