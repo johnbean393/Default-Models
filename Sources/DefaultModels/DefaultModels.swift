@@ -17,7 +17,8 @@ public class DefaultModels {
 		MistralSmall.self,
 		Ministral.self,
 		EXAONE3.self,
-		OLMo2.self
+		OLMo2.self,
+		DeepSeekR1.self
 	]
 	
 	/// All default models that can be run by the device, in an array of `HuggingFaceModel`
