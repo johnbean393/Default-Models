@@ -9,6 +9,19 @@ import Foundation
 
 public class LLaMa3: ModelSet {
 	
+	/// Conformance to the `Equatable` protocol
+	public static func == (lhs: LLaMa3, rhs: LLaMa3) -> Bool {
+		return lhs.id == rhs.id
+	}
+	
+	/// Conformance to the `Hashable` protocol
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+	}
+	
+	/// The identifier for the model set, in type `String`
+	public static var id: String { self.name }
+	
 	/// The name of the model set, in type `String`
 	public static let name: String = "LLaMa 3"
 	

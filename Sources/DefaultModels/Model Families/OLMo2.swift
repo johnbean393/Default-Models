@@ -9,6 +9,19 @@ import Foundation
 
 public class OLMo2: ModelSet {
 	
+	/// Conformance to the `Equatable` protocol
+	public static func == (lhs: OLMo2, rhs: OLMo2) -> Bool {
+		return lhs.id == rhs.id
+	}
+	
+	/// Conformance to the `Hashable` protocol
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+	}
+	
+	/// The identifier for the model set, in type `String`
+	public static var id: String { self.name }
+	
 	/// The name of the model set, in type `String`
 	public static let name: String = "OLMo 2"
 	

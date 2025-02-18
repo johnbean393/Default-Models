@@ -7,9 +7,10 @@
 
 import Foundation
 
-public protocol ModelSet: Identifiable {
+public protocol ModelSet: Identifiable, Hashable {
 	
 	static var models: [HuggingFaceModel] { get }
 	static var name: String { get }
+	static var id: String { get }
 	
 }
