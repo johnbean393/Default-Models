@@ -38,7 +38,8 @@ public class MistralSmall: ModelSet {
 		minRam: 32,
 		minGpuTflops: 13.6,
 		mmluScore: 81,
-		specializations: []
+		specializations: [],
+		modelFamily: .mistralSmall
 	)
 	
 }

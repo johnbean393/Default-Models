@@ -39,7 +39,8 @@ public class OLMo2: ModelSet {
 		minRam: 16,
 		minGpuTflops: 5.3,
 		mmluScore: 63.7,
-		specializations: [.fullyOpenSource]
+		specializations: [.fullyOpenSource],
+		modelFamily: .olmo2
 	)
 	
 	/// Static constant for the OLMo 2 13B model
@@ -50,7 +51,8 @@ public class OLMo2: ModelSet {
 		minRam: 24,
 		minGpuTflops: 13.6,
 		mmluScore: 67.5,
-		specializations: [.fullyOpenSource]
+		specializations: [.fullyOpenSource],
+		modelFamily: .olmo2
 	)
 	
 }

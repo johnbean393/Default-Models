@@ -46,7 +46,8 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q8_0.gguf",
 		minRam: 8,
 		minGpuTflops: 2.2,
-		mmluScore: 60.9
+		mmluScore: 60.9,
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 3B model
@@ -56,7 +57,8 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q8_0.gguf",
 		minRam: 12,
 		minGpuTflops: 2.6,
-		mmluScore: 65.6
+		mmluScore: 65.6,
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 7B model
@@ -66,7 +68,8 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q8_0.gguf",
 		minRam: 16,
 		minGpuTflops: 5.3,
-		mmluScore: 70.3
+		mmluScore: 70.3,
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 14B model
@@ -76,7 +79,8 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-14B-Instruct-GGUF/resolve/main/Qwen2.5-14B-Instruct-IQ4_XS.gguf",
 		minRam: 24,
 		minGpuTflops: 16.2,
-		mmluScore: 79.7
+		mmluScore: 79.7,
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 32B model
@@ -86,7 +90,8 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF/resolve/main/Qwen2.5-32B-Instruct-IQ4_XS.gguf",
 		minRam: 36,
 		minGpuTflops: 18.4,
-		mmluScore: 83.3
+		mmluScore: 83.3,
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 7B Coder model
@@ -97,7 +102,8 @@ public class Qwen2: ModelSet {
 		minRam: 16,
 		minGpuTflops: 6.7,
 		mmluScore: 70.3,
-		specializations: [.coding]
+		specializations: [.coding],
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 14B Coder model
@@ -108,7 +114,8 @@ public class Qwen2: ModelSet {
 		minRam: 24,
 		minGpuTflops: 16.2,
 		mmluScore: 79.7,
-		specializations: [.coding]
+		specializations: [.coding],
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 32B Coder model
@@ -119,7 +126,8 @@ public class Qwen2: ModelSet {
 		minRam: 36,
 		minGpuTflops: 16.2,
 		mmluScore: 83.3,
-		specializations: [.coding]
+		specializations: [.coding],
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the Qwen 2.5 7B Math model
@@ -130,7 +138,8 @@ public class Qwen2: ModelSet {
 		minRam: 16,
 		minGpuTflops: 6.7,
 		mmluScore: 70.3,
-		specializations: [.math]
+		specializations: [.math],
+		modelFamily: .qwen2
 	)
 	
 	/// Static constant for the QwQ 32B Preview model
@@ -141,7 +150,8 @@ public class Qwen2: ModelSet {
 		minRam: 36,
 		minGpuTflops: 16.2,
 		mmluScore: 83.3,
-		specializations: [.reasoning]
+		specializations: [.reasoning],
+		modelFamily: .qwen2
 	)
 	
 }

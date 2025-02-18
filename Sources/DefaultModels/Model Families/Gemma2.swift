@@ -39,7 +39,8 @@ public class Gemma2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/gemma-2-2b-it-GGUF/resolve/main/gemma-2-2b-it-Q8_0.gguf",
 		minRam: 8,
 		minGpuTflops: 2.2,
-		mmluScore: 52.2
+		mmluScore: 52.2,
+		modelFamily: .gemma2
 	)
 	
 	/// Static constant for the Gemma 2 9B model
@@ -49,7 +50,8 @@ public class Gemma2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0.gguf",
 		minRam: 16,
 		minGpuTflops: 7.4,
-		mmluScore: 52.2
+		mmluScore: 52.2,
+		modelFamily: .gemma2
 	)
 	
 	/// Static constant for the Gemma 2 27B model
@@ -59,7 +61,8 @@ public class Gemma2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/gemma-2-27b-it-GGUF/resolve/main/gemma-2-27b-it-IQ4_XS.gguf",
 		minRam: 32,
 		minGpuTflops: 16.2,
-		mmluScore: 52.2
+		mmluScore: 52.2,
+		modelFamily: .gemma2
 	)
 	
 }

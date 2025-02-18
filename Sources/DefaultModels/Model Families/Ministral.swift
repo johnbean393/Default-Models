@@ -37,7 +37,8 @@ public class Ministral: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF/resolve/main/Ministral-8B-Instruct-2410-Q8_0.gguf",
 		minRam: 18,
 		minGpuTflops: 6.8,
-		mmluScore: 65.0
+		mmluScore: 65.0,
+		modelFamily: .ministral
 	)
 	
 }

@@ -39,7 +39,8 @@ public class EXAONE3: ModelSet {
 		urlString: "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct-GGUF/resolve/main/EXAONE-3.5-2.4B-Instruct-Q8_0.gguf",
 		minRam: 8,
 		minGpuTflops: 3.5,
-		mmluScore: 60.4
+		mmluScore: 60.4,
+		modelFamily: .exaone3
 	)
 	
 	/// Static constant for the EXAONE 3.5 7.8B model
@@ -49,7 +50,8 @@ public class EXAONE3: ModelSet {
 		urlString: "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF/resolve/main/EXAONE-3.5-7.8B-Instruct-Q8_0.gguf",
 		minRam: 18,
 		minGpuTflops: 6.8,
-		mmluScore: 69.0
+		mmluScore: 69.0,
+		modelFamily: .exaone3
 	)
 	
 	/// Static constant for the EXAONE 3.5 32B model
@@ -59,7 +61,8 @@ public class EXAONE3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/EXAONE-3.5-32B-Instruct-GGUF/resolve/main/EXAONE-3.5-32B-Instruct-IQ4_XS.gguf",
 		minRam: 36,
 		minGpuTflops: 16.2,
-		mmluScore: 78.3
+		mmluScore: 78.3,
+		modelFamily: .exaone3
 	)
 	
 }

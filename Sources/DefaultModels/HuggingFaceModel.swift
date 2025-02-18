@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 public struct HuggingFaceModel: Codable, Hashable {
 	
@@ -17,7 +18,8 @@ public struct HuggingFaceModel: Codable, Hashable {
 		minRam: Int,
 		minGpuTflops: Double,
 		mmluScore: Float,
-		specializations: [Specializations] = []
+		specializations: [Specializations] = [],
+		modelFamily: ModelFamily
 	) {
 		self.params = params
 		self.name = name
@@ -26,6 +28,7 @@ public struct HuggingFaceModel: Codable, Hashable {
 		self.minGpuTflops = minGpuTflops
 		self.mmluScore = mmluScore
 		self.specializations = specializations
+		self.modelFamily = modelFamily
 	}
 
 	/// The name of the model, of type `String`
@@ -45,6 +48,9 @@ public struct HuggingFaceModel: Codable, Hashable {
 	
 	/// Score in the MMLU benchmark, in type `Float`
 	public var mmluScore: Float
+	
+	/// The model's family
+	public var modelFamily: ModelFamily
 	
 	/// The URL of the model's of type `URL`
 	public var url: URL {
@@ -108,6 +114,19 @@ public struct HuggingFaceModel: Codable, Hashable {
 		case reasoning = "Reasoning"
 		case imageInput = "Accepts Image Input"
 		case fullyOpenSource = "Fully Open Source"
+		
+	}
+	
+	/// The model's family
+	public enum ModelFamily: String, CaseIterable, Codable {
+		
+		case exaone3 = "EXAONE 3"
+		case gemma2 = "Gemma 2"
+		case llama3 = "Llama 3"
+		case ministral = "Ministral"
+		case mistralSmall = "Mistral Small"
+		case olmo2 = "OLMo 2"
+		case qwen2 = "Qwen 2"
 		
 	}
 	

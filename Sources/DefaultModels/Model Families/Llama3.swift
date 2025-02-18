@@ -39,7 +39,8 @@ public class Llama3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
 		minRam: 18,
 		minGpuTflops: 6.8,
-		mmluScore: 66.6
+		mmluScore: 66.6,
+		modelFamily: .llama3
 	)
 	
 	/// Static constant for the Llama 3.2 1B model
@@ -49,7 +50,8 @@ public class Llama3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q8_0.gguf",
 		minRam: 8,
 		minGpuTflops: 2.2,
-		mmluScore: 49.3
+		mmluScore: 49.3,
+		modelFamily: .llama3
 	)
 	
 	/// Static constant for the Llama 3.2 3B model
@@ -59,7 +61,8 @@ public class Llama3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q8_0.gguf",
 		minRam: 16,
 		minGpuTflops: 3.5,
-		mmluScore: 63.4
+		mmluScore: 63.4,
+		modelFamily: .llama3
 	)
 	
 }
