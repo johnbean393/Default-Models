@@ -11,6 +11,7 @@ public struct HuggingFaceModel: Codable, Hashable {
 	
 	/// Initializer
 	init(
+		name: String,
 		params: Float,
 		urlString: String,
 		minRam: Int,
@@ -19,6 +20,7 @@ public struct HuggingFaceModel: Codable, Hashable {
 		specializations: [Specializations] = []
 	) {
 		self.params = params
+		self.name = name
 		self.urlString = urlString
 		self.minRam = minRam
 		self.minGpuTflops = minGpuTflops
@@ -26,6 +28,9 @@ public struct HuggingFaceModel: Codable, Hashable {
 		self.specializations = specializations
 	}
 
+	/// The name of the model, of type `String`
+	public var name: String
+	
 	/// Number of billions of parameters, in type `Float`
 	public var params: Float
 	
@@ -53,11 +58,6 @@ public struct HuggingFaceModel: Codable, Hashable {
 			with: "hf-mirror.com"
 		)
 		return URL(string: mirrored)!
-	}
-	
-	/// The name of the model of type `String`
-	public var name: String {
-		return self.url.deletingPathExtension().lastPathComponent
 	}
 	
 	/// A function to indicate whether the device can run the model

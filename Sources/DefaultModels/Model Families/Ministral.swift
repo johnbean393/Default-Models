@@ -32,6 +32,7 @@ public class Ministral: ModelSet {
 	
 	/// Static constant for the Ministral 8B model
 	private static let ministral_8b: HuggingFaceModel = HuggingFaceModel(
+		name: "Ministral-8B-Instruct-2410",
 		params: 8,
 		urlString: "https://huggingface.co/bartowski/Ministral-8B-Instruct-2410-GGUF/resolve/main/Ministral-8B-Instruct-2410-Q8_0.gguf",
 		minRam: 18,

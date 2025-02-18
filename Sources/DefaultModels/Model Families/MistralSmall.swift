@@ -32,6 +32,7 @@ public class MistralSmall: ModelSet {
 	
 	/// Static constant for the Mistral Small 24B model
 	private static let mistral_small_24b: HuggingFaceModel = HuggingFaceModel(
+		name: "Mistral-Small-24B-Instruct-2501",
 		params: 24,
 		urlString: "https://huggingface.co/bartowski/Mistral-Small-24B-Instruct-2501-GGUF/resolve/main/Mistral-Small-24B-Instruct-2501-IQ4_XS.gguf",
 		minRam: 32,

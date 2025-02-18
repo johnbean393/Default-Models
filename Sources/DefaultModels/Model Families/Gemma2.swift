@@ -34,6 +34,7 @@ public class Gemma2: ModelSet {
 	
 	/// Static constant for the Gemma 2 2B model
 	private static let gemma_2_2b: HuggingFaceModel = HuggingFaceModel(
+		name: "Gemma-2-2B-it",
 		params: 2,
 		urlString: "https://huggingface.co/bartowski/gemma-2-2b-it-GGUF/resolve/main/gemma-2-2b-it-Q8_0.gguf",
 		minRam: 8,
@@ -43,6 +44,7 @@ public class Gemma2: ModelSet {
 	
 	/// Static constant for the Gemma 2 9B model
 	private static let gemma_2_9b: HuggingFaceModel = HuggingFaceModel(
+		name: "Gemma-2-9B-it",
 		params: 9,
 		urlString: "https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0.gguf",
 		minRam: 16,
@@ -52,6 +54,7 @@ public class Gemma2: ModelSet {
 	
 	/// Static constant for the Gemma 2 27B model
 	private static let gemma_2_27b: HuggingFaceModel = HuggingFaceModel(
+		name: "Gemma-2-27B-it",
 		params: 27,
 		urlString: "https://huggingface.co/bartowski/gemma-2-27b-it-GGUF/resolve/main/gemma-2-27b-it-IQ4_XS.gguf",
 		minRam: 32,

@@ -1,5 +1,5 @@
 //
-//  LLaMa3.swift
+//  Llama3.swift
 //  Sidekick
 //
 //  Created by Bean John on 11/3/24.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-public class LLaMa3: ModelSet {
+public class Llama3: ModelSet {
 	
 	/// Conformance to the `Equatable` protocol
-	public static func == (lhs: LLaMa3, rhs: LLaMa3) -> Bool {
+	public static func == (lhs: Llama3, rhs: Llama3) -> Bool {
 		return lhs.id == rhs.id
 	}
 	
@@ -23,17 +23,18 @@ public class LLaMa3: ModelSet {
 	public static var id: String { self.name }
 	
 	/// The name of the model set, in type `String`
-	public static let name: String = "LLaMa 3"
+	public static let name: String = "Llama 3"
 	
-	/// An array of `LLaMa 3` models, of type ``HuggingFaceModel``
+	/// An array of `Llama 3` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
-		LLaMa3.llama_3pt1_8b,
-		LLaMa3.llama_3pt2_1b,
-		LLaMa3.llama_3pt2_3b
+		Llama3.llama_3pt1_8b,
+		Llama3.llama_3pt2_1b,
+		Llama3.llama_3pt2_3b
 	]
 
-	/// Static constant for the LLaMa 3.1 8B model
+	/// Static constant for the Llama 3.1 8B model
 	private static let llama_3pt1_8b: HuggingFaceModel = HuggingFaceModel(
+		name: "Llama-3.1-8B-Instruct",
 		params: 8,
 		urlString: "https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
 		minRam: 18,
@@ -41,8 +42,9 @@ public class LLaMa3: ModelSet {
 		mmluScore: 66.6
 	)
 	
-	/// Static constant for the LLaMa 3.2 1B model
+	/// Static constant for the Llama 3.2 1B model
 	private static let llama_3pt2_1b: HuggingFaceModel = HuggingFaceModel(
+		name: "Llama-3.2-1B-Instruct",
 		params: 1,
 		urlString: "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q8_0.gguf",
 		minRam: 8,
@@ -50,8 +52,9 @@ public class LLaMa3: ModelSet {
 		mmluScore: 49.3
 	)
 	
-	/// Static constant for the LLaMa 3.2 3B model
+	/// Static constant for the Llama 3.2 3B model
 	private static let llama_3pt2_3b: HuggingFaceModel = HuggingFaceModel(
+		name: "Llama-3.2-3B-Instruct",
 		params: 3,
 		urlString: "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q8_0.gguf",
 		minRam: 16,
