@@ -25,6 +25,9 @@ public class Gemma2: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "Gemma 2"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "Gemma 2 is a family of second generation open models from Google, built from the same technology used to create the Gemini models."
+	
 	/// An array of `Gemma 2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Gemma2.gemma_2_2b,

@@ -25,6 +25,9 @@ public class EXAONE3: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "EXAONE 3"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "A collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research."
+	
 	/// An array of `Exaone 3` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		EXAONE3.exaone_3Pt5_2pt4b,

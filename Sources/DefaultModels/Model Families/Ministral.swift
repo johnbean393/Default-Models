@@ -25,6 +25,9 @@ public class Ministral: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "Ministral"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "A set of state of the art small language models developed by Mistral."
+	
 	/// An array of `Ministral` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Ministral.ministral_8b

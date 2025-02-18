@@ -25,6 +25,9 @@ public class DeepSeekR1: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "DeepSeek R1"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "DeepSeek's first generation reasoning models with comparable performance to OpenAI's o1."
+	
 	/// An array of `DeepSeek R1` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		DeepSeekR1.deepseek_r1_distill_qwen_2Pt5_1pt5b,

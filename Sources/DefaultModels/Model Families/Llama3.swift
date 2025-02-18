@@ -25,6 +25,9 @@ public class Llama3: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "Llama 3"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "A family of large language models (LLMs) developed by Meta, with pretrained and instruction tuned generative text models."
+	
 	/// An array of `Llama 3` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Llama3.llama_3pt1_8b,

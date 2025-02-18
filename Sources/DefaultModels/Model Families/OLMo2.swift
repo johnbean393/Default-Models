@@ -25,6 +25,9 @@ public class OLMo2: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "OLMo 2"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "OLMo 2 is a family of fully-open language models, developed by Allen AI with open and accessible training data, open-source training code, reproducible training recipes, transparent evaluations, intermediate checkpoints, and more."
+	
 	/// An array of `OLMo2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		OLMo2.olmo_2_7b,

@@ -25,6 +25,9 @@ public class MistralSmall: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "Mistral Small"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "A state of the art small language model developed by Mistral, achieving state-of-the-art capabilities comparable to larger models."
+	
 	/// An array of `MistralSmall` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		MistralSmall.mistral_small_24b

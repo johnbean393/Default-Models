@@ -25,6 +25,9 @@ public class Qwen2: ModelSet {
 	/// The name of the model set, in type `String`
 	public static let name: String = "Qwen 2"
 	
+	/// The model family's description, in type 	`String`
+	public static let description: String = "A family of state of the art models developed by Alibaba Cloud, with performance besting all other open models in its size class."
+	
 	/// An array of `Qwen 2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Qwen2.qwen_2Pt5_1pt5b,

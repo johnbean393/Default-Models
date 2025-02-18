@@ -12,5 +12,6 @@ public protocol ModelSet: Identifiable, Hashable {
 	static var models: [HuggingFaceModel] { get }
 	static var name: String { get }
 	static var id: String { get }
+	static var description: String { get }
 	
 }
