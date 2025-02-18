@@ -27,8 +27,11 @@ public class DeepSeekR1: ModelSet {
 	
 	/// An array of `DeepSeek R1` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
+		DeepSeekR1.deepseek_r1_distill_qwen_2Pt5_1pt5b,
 		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_7b,
-		DeepSeekR1.deepseek_r1_distill_llama_3pt1_8b
+		DeepSeekR1.deepseek_r1_distill_llama_3pt1_8b,
+		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_14b,
+		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_32b
 	]
 	
 	/// Static constant for the DeepSeek-R1 Distill Qwen 2.5 1.5B model
@@ -39,6 +42,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 8,
 		minGpuTflops: 2.2,
 		mmluScore: 60.9,
+		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
 	
@@ -50,6 +54,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 16,
 		minGpuTflops: 5.3,
 		mmluScore: 70.3,
+		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
 	
@@ -61,6 +66,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 18,
 		minGpuTflops: 6.8,
 		mmluScore: 66.6,
+		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
 	
@@ -72,6 +78,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 24,
 		minGpuTflops: 16.2,
 		mmluScore: 79.7,
+		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
 	
@@ -83,6 +90,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 36,
 		minGpuTflops: 18.4,
 		mmluScore: 83.3,
+		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
 	
