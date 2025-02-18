@@ -9,6 +9,9 @@ import Foundation
 
 public class LLaMa3: ModelSet {
 	
+	/// The name of the model set, in type `String`
+	public static let name: String = "LLaMa 3"
+	
 	/// An array of `LLaMa 3` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		LLaMa3.llama_3pt1_8b,

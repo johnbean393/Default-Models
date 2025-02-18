@@ -10,5 +10,6 @@ import Foundation
 public protocol ModelSet: Identifiable {
 	
 	static var models: [HuggingFaceModel] { get }
+	static var name: String { get }
 	
 }

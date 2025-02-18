@@ -9,6 +9,9 @@ import Foundation
 
 public class OLMo2: ModelSet {
 	
+	/// The name of the model set, in type `String`
+	public static let name: String = "OLMo 2"
+	
 	/// An array of `OLMo2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		OLMo2.olmo_2_7b,

@@ -9,6 +9,9 @@ import Foundation
 
 public class Gemma2: ModelSet {
 	
+	/// The name of the model set, in type `String`
+	public static let name: String = "Gemma 2"
+	
 	/// An array of `Gemma 2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Gemma2.gemma_2_2b,

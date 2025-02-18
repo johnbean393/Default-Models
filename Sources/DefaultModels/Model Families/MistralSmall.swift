@@ -9,6 +9,9 @@ import Foundation
 
 public class MistralSmall: ModelSet {
 	
+	/// The name of the model set, in type `String`
+	public static let name: String = "Mistral Small"
+	
 	/// An array of `MistralSmall` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		MistralSmall.mistral_small_24b

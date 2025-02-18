@@ -9,6 +9,9 @@ import Foundation
 
 public class Ministral: ModelSet {
 	
+	/// The name of the model set, in type `String`
+	public static let name: String = "Ministral"
+	
 	/// An array of `Ministral` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Ministral.ministral_8b
