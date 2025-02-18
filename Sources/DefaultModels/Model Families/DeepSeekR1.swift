@@ -36,7 +36,7 @@ public class DeepSeekR1: ModelSet {
 	
 	/// Static constant for the DeepSeek-R1 Distill Qwen 2.5 1.5B model
 	private static let deepseek_r1_distill_qwen_2Pt5_1pt5b: HuggingFaceModel = HuggingFaceModel(
-		name: "DeepSeek-R1-Qwen2.5-1.5B",
+		name: "DeepSeek-R1-Distill-Qwen-1.5B",
 		params: 1.5,
 		urlString: "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf",
 		minRam: 8,
