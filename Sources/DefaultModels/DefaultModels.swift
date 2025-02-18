@@ -42,8 +42,10 @@ public class DefaultModels {
 	/// The reccomended model for the device, of type ``HuggingFaceModel``
 	public static var recommendedModel: HuggingFaceModel {
 		get async {
-			// Get list of models
-			let models: [HuggingFaceModel] = await self.models
+			// Get list of non-reasoning base models
+			let models: [HuggingFaceModel] = await self.models.filter {
+				$0.isReasoningModel == false
+			}
 			// Get baseline model
 			let minModel: HuggingFaceModel = models.sorted(by: {
 				$0.minRam < $1.minRam

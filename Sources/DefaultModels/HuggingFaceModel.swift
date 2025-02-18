@@ -25,12 +25,12 @@ public struct HuggingFaceModel: Codable, Hashable {
 		self.mmluScore = mmluScore
 		self.specializations = specializations
 	}
-	
+
 	/// Number of billions of parameters, in type `Float`
 	public var params: Float
 	
 	/// The URL of the model's in type `String`
-	public var urlString: String
+	private var urlString: String
 	
 	/// The minimum RAM needed for the model, in type 	`Int`
 	public var minRam: Int
@@ -43,7 +43,7 @@ public struct HuggingFaceModel: Codable, Hashable {
 	
 	/// The URL of the model's of type `URL`
 	public var url: URL {
-		return URL(string: urlString)!
+		return URL(string: urlString + "?download=true")!
 	}
 	
 	/// /// The URL of the model's mirror of type `URL`
@@ -89,6 +89,11 @@ public struct HuggingFaceModel: Codable, Hashable {
 			return 0
 		}
 		return device.flops
+	}
+	
+	/// A `Bool` indicating if the model is a reasoning model
+	public var isReasoningModel: Bool {
+		return self.specializations.contains(.reasoning)
 	}
 	
 	/// The model's specialties, of type ``[Specializations]``

@@ -17,7 +17,7 @@ public class MistralSmall: ModelSet {
 	/// Static constant for the Mistral Small 24B model
 	private static let mistral_small_24b: HuggingFaceModel = HuggingFaceModel(
 		params: 24,
-		urlString: "https://huggingface.co/bartowski/Mistral-Small-24B-Instruct-2501-GGUF/resolve/main/Mistral-Small-24B-Instruct-2501-IQ4_XS.gguf?download=true",
+		urlString: "https://huggingface.co/bartowski/Mistral-Small-24B-Instruct-2501-GGUF/resolve/main/Mistral-Small-24B-Instruct-2501-IQ4_XS.gguf",
 		minRam: 32,
 		minGpuTflops: 13.6,
 		mmluScore: 81,
