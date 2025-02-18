@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-public struct HuggingFaceModel: Codable, Hashable {
+public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 	
 	/// Initializer
 	init(
@@ -29,6 +29,11 @@ public struct HuggingFaceModel: Codable, Hashable {
 		self.mmluScore = mmluScore
 		self.specializations = specializations
 		self.modelFamily = modelFamily
+	}
+	
+	/// Provide conformance to `Identifiable`
+	public var id: String {
+		return self.name
 	}
 
 	/// The name of the model, of type `String`
