@@ -31,6 +31,7 @@ public class Qwen2: ModelSet {
 		Qwen2.qwen_2pt5_3b,
 		Qwen2.qwen_2pt5_7b,
 		Qwen2.qwen_2pt5_14b,
+		Qwen2.qwen_2pt5_32b,
 		Qwen2.qwen_2pt5_7b_coder,
 		Qwen2.qwen_2pt5_14b_coder,
 		Qwen2.qwen_2pt5_32b_coder,
