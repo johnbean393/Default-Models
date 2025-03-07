@@ -39,7 +39,7 @@ public class Qwen2: ModelSet {
 		Qwen2.qwen_2pt5_14b_coder,
 		Qwen2.qwen_2pt5_32b_coder,
 		Qwen2.qwen_2pt5_7b_math,
-		Qwen2.qwq_32b_preview
+		Qwen2.qwq_32b
 	]
 	
 	/// Static constant for the Qwen 2.5 1.5B model
@@ -145,11 +145,11 @@ public class Qwen2: ModelSet {
 		modelFamily: .qwen2
 	)
 	
-	/// Static constant for the QwQ 32B Preview model
-	private static let qwq_32b_preview: HuggingFaceModel = HuggingFaceModel(
+	/// Static constant for the QwQ 32B model
+	private static let qwq_32b: HuggingFaceModel = HuggingFaceModel(
 		name: "QwQ-32B-Preview",
 		params: 32,
-		urlString: "https://huggingface.co/bartowski/QwQ-32B-Preview-GGUF/resolve/main/QwQ-32B-Preview-IQ4_XS.gguf",
+		urlString: "https://huggingface.co/bartowski/Qwen_QwQ-32B-GGUF/resolve/main/Qwen_QwQ-32B-IQ4_XS.gguf",
 		minRam: 36,
 		minGpuTflops: 16.2,
 		mmluScore: 83.3,
