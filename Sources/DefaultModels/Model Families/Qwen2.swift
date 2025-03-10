@@ -147,7 +147,7 @@ public class Qwen2: ModelSet {
 	
 	/// Static constant for the QwQ 32B model
 	private static let qwq_32b: HuggingFaceModel = HuggingFaceModel(
-		name: "QwQ-32B-Preview",
+		name: "QwQ-32B",
 		params: 32,
 		urlString: "https://huggingface.co/bartowski/Qwen_QwQ-32B-GGUF/resolve/main/Qwen_QwQ-32B-IQ4_XS.gguf",
 		minRam: 36,
