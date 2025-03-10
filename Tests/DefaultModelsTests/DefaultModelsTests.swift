@@ -24,3 +24,14 @@ func exportModelJson() async throws {
 	}
 
 }
+
+@Test
+func listModels() async throws {
+	let models: [HuggingFaceModel] = await DefaultModels.models.sorted { model0, model1 in
+		model0.modelFamily.rawValue < model1.modelFamily.rawValue
+	}
+	let names: [String] = models.map(\.name)
+	for name in names {
+		print(name)
+	}
+}

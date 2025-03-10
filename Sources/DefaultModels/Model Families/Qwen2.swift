@@ -31,7 +31,8 @@ public class Qwen2: ModelSet {
 	/// An array of `Qwen 2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		Qwen2.qwen_2Pt5_1pt5b,
-		Qwen2.qwen_2pt5_3b,
+		Qwen2.qwen_2pt5_3b_q4,
+		Qwen2.qwen_2pt5_3b_q8,
 		Qwen2.qwen_2pt5_7b,
 		Qwen2.qwen_2pt5_14b,
 		Qwen2.qwen_2pt5_32b,
@@ -53,11 +54,22 @@ public class Qwen2: ModelSet {
 		modelFamily: .qwen2
 	)
 	
-	/// Static constant for the Qwen 2.5 3B model
-	private static let qwen_2pt5_3b: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-3B-Instruct",
+	/// Static constant for the Qwen 2.5 3B model at 4 bit quantization
+	private static let qwen_2pt5_3b_q4: HuggingFaceModel = HuggingFaceModel(
+		name: "Qwen2.5-3B-Instruct (IQ4_XS)",
 		params: 3,
-		urlString: "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q8_0.gguf",
+		urlString: "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-IQ4_XS.gguf",
+		minRam: 8,
+		minGpuTflops: 2.2,
+		mmluScore: 65.6,
+		modelFamily: .qwen2
+	)
+	
+	/// Static constant for the Qwen 2.5 3B model at 8 bit quantization
+	private static let qwen_2pt5_3b_q8: HuggingFaceModel = HuggingFaceModel(
+		name: "Qwen2.5-3B-Instruct (Q8_0)",
+		params: 3,
+		urlString: "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q8_0.gguf",
 		minRam: 12,
 		minGpuTflops: 2.6,
 		mmluScore: 65.6,
