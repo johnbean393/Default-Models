@@ -79,6 +79,7 @@ public class DefaultModels {
 		// Create a URLSession with a timeout of 5 seconds
 		let configuration: URLSessionConfiguration = URLSessionConfiguration.default
 		configuration.timeoutIntervalForRequest = 5
+		configuration.timeoutIntervalForResource = 5
 		let session: URLSession = URLSession(
 			configuration: configuration
 		)
