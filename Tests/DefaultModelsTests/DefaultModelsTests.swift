@@ -27,9 +27,11 @@ func exportModelJson() async throws {
 
 @Test
 func listModels() async throws {
-	let models: [HuggingFaceModel] = await DefaultModels.models.sorted { model0, model1 in
-		model0.modelFamily.rawValue < model1.modelFamily.rawValue
-	}
+	let models: [HuggingFaceModel] = await DefaultModels
+		.models
+		.sorted(by: { $0.name < $1.name })
+		.sorted(by: { $0.params < $1.params })
+		.sorted(by: { $0.modelFamily.rawValue < $1.modelFamily.rawValue })
 	let names: [String] = models.map(\.name)
 	for name in names {
 		print(name)
