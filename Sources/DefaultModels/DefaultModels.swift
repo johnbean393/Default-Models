@@ -13,6 +13,7 @@ public class DefaultModels {
 	public static let modelFamilies: [any ModelSet.Type] = [
 		Llama3.self,
 		Gemma2.self,
+		Gemma3.self,
 		Qwen2.self,
 		MistralSmall.self,
 		Ministral.self,

@@ -127,6 +127,7 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 		
 		case exaone3 = "EXAONE 3"
 		case gemma2 = "Gemma 2"
+		case gemma3 = "Gemma 3"
 		case llama3 = "Llama 3"
 		case ministral = "Ministral"
 		case mistralSmall = "Mistral Small"
