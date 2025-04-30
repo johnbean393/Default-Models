@@ -44,10 +44,8 @@ public class DefaultModels {
 	/// The reccomended model for the device, of type ``HuggingFaceModel``
 	public static var recommendedModel: HuggingFaceModel {
 		get async {
-			// Get list of non-reasoning base models
-			let models: [HuggingFaceModel] = await self.models.filter {
-				$0.isReasoningModel == false
-			}
+			// Get list of base models
+			let models: [HuggingFaceModel] = await self.models
 			// Get baseline model
 			let minModel: HuggingFaceModel = models.sorted(by: {
 				$0.minRam < $1.minRam
@@ -55,9 +53,11 @@ public class DefaultModels {
 			// Get top end model that can be run
 			if let maxModel: HuggingFaceModel = models.filter({
 				$0.canRun()
-			}).sorted(by: {
-				$0.mmluScore > $1.mmluScore
-			}).first {
+            }).filter({ model in
+                model.intelligenceScore != nil
+            }).sorted(by: {
+                ($0.intelligenceScore ?? 0) > ($1.intelligenceScore ?? 0)
+            }).first {
 				return maxModel
 			} else {
 				return minModel
@@ -120,8 +120,10 @@ public class DefaultModels {
 				unifiedMemorySize: ramSize,
 				gpuTflops: gpuTflops
 			)
-		}).sorted(by: {
-			$0.mmluScore > $1.mmluScore
+        }).filter({ model in
+            model.intelligenceScore != nil
+        }).sorted(by: {
+            ($0.intelligenceScore ?? 0) > ($1.intelligenceScore ?? 0)
 		}).first {
 			return maxModel
 		} else {

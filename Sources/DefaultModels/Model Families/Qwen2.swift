@@ -115,7 +115,7 @@ public class Qwen2: ModelSet {
 		params: 7,
 		urlString: "https://huggingface.co/bartowski/Qwen2.5.1-Coder-7B-Instruct-GGUF/resolve/main/Qwen2.5.1-Coder-7B-Instruct-Q8_0.gguf",
 		minRam: 16,
-		minGpuTflops: 6.7,
+        minGpuTflops: 5.3,
 		mmluScore: 70.3,
 		specializations: [.coding],
 		modelFamily: .qwen2
@@ -127,7 +127,7 @@ public class Qwen2: ModelSet {
 		params: 14,
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-14B-Instruct-IQ4_XS.gguf",
 		minRam: 24,
-		minGpuTflops: 16.2,
+        minGpuTflops: 13.6,
 		mmluScore: 79.7,
 		specializations: [.coding],
 		modelFamily: .qwen2
@@ -165,6 +165,7 @@ public class Qwen2: ModelSet {
 		minRam: 36,
 		minGpuTflops: 16.2,
 		mmluScore: 83.3,
+        intelligenceScore: 58,
 		specializations: [.reasoning],
 		modelFamily: .qwen2
 	)

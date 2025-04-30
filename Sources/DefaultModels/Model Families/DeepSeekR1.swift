@@ -45,6 +45,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 8,
 		minGpuTflops: 2.2,
 		mmluScore: 60.9,
+        intelligenceScore: 19,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -69,6 +70,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 18,
 		minGpuTflops: 6.8,
 		mmluScore: 66.6,
+        intelligenceScore: 34,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -81,6 +83,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 24,
 		minGpuTflops: 16.2,
 		mmluScore: 79.7,
+        intelligenceScore: 49,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -93,6 +96,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 36,
 		minGpuTflops: 18.4,
 		mmluScore: 83.3,
+        intelligenceScore: 52,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)

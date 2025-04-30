@@ -54,6 +54,7 @@ public class Gemma2: ModelSet {
 		minRam: 16,
 		minGpuTflops: 7.4,
 		mmluScore: 52.2,
+        intelligenceScore: 22,
 		modelFamily: .gemma2
 	)
 	

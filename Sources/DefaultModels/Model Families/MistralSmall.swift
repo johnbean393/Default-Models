@@ -30,7 +30,8 @@ public class MistralSmall: ModelSet {
 	
 	/// An array of `MistralSmall` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
-		MistralSmall.mistral_small_24b
+		MistralSmall.mistral_small_24b,
+        MistralSmall.mistral_small_3pt1_24b
 	]
 	
 	/// Static constant for the Mistral Small 24B model
@@ -41,7 +42,20 @@ public class MistralSmall: ModelSet {
 		minRam: 32,
 		minGpuTflops: 13.6,
 		mmluScore: 81,
+        intelligenceScore: 35,
 		modelFamily: .mistralSmall
 	)
+    
+    /// Static constant for the Mistral Small 24B model
+    private static let mistral_small_3pt1_24b: HuggingFaceModel = HuggingFaceModel(
+        name: "Mistral-Small-3.1-24B-Instruct-2503",
+        params: 24,
+        urlString: "https://huggingface.co/bartowski/mistralai_Mistral-Small-3.1-24B-Instruct-2503-GGUF/resolve/main/mistralai_Mistral-Small-3.1-24B-Instruct-2503-IQ4_XS.gguf",
+        minRam: 32,
+        minGpuTflops: 13.6,
+        mmluScore: 81,
+        intelligenceScore: 35,
+        modelFamily: .mistralSmall
+    )
 	
 }

@@ -9,7 +9,9 @@ func exportModelJson() async throws {
 	// Initialize the encoder
 	let encoder: JSONEncoder = JSONEncoder()
 	// Define JSON file URL
-	let jsonUrl: URL = URL(fileURLWithPath: "/Users/bj/Library/Application Support/Magic Sorter/Sorted Land/Computer DN/Xcode Apps/Misc/Sidekick/Models/DefaultModels/models.json")
+	let jsonUrl: URL = URL(
+        fileURLWithPath: "/Users/bj/Library/Application Support/Magic Sorter/Sorted Land/Computer DN/Xcode Apps/Misc/Sidekick/Models/DefaultModels/models.json"
+    )
 	// Save models to JSON file
 	do {
 		// Convert models to data
@@ -27,12 +29,12 @@ func exportModelJson() async throws {
 
 @Test
 func listModels() async throws {
-	let models: [HuggingFaceModel] = await DefaultModels
+	async let models: [HuggingFaceModel] = DefaultModels
 		.models
 		.sorted(by: { $0.name < $1.name })
 		.sorted(by: { $0.params < $1.params })
 		.sorted(by: { $0.modelFamily.rawValue < $1.modelFamily.rawValue })
-	let names: [String] = models.map(\.name)
+	let names: [String] = await models.map(\.name)
 	for name in names {
 		print(name)
 	}

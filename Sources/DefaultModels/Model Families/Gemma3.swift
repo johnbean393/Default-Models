@@ -30,12 +30,24 @@ public class Gemma3: ModelSet {
 	
 	/// An array of `Gemma 3` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
+        Gemma3.gemma_3_1b,
 		Gemma3.gemma_3_4b_q4,
 		Gemma3.gemma_3_4b_q8,
 		Gemma3.gemma_3_12b,
 		Gemma3.gemma_3_27b
 	]
 	
+    /// Static constant for the Gemma 3 1B model
+    private static let gemma_3_1b: HuggingFaceModel = HuggingFaceModel(
+        name: "Gemma-3-1B-it",
+        params: 4,
+        urlString: "https://huggingface.co/bartowski/google_gemma-3-1b-it-GGUF/resolve/main/google_gemma-3-1b-it-Q8_0.gguf",
+        minRam: 8,
+        minGpuTflops: 2.2,
+        mmluScore: 59.6, // TODO: Obtain scores for the instruction tuned model
+        modelFamily: .gemma3
+    )
+    
 	/// Static constant for the Gemma 3 4B model at 4 bit quantization
 	private static let gemma_3_4b_q4: HuggingFaceModel = HuggingFaceModel(
 		name: "Gemma-3-4B-it (IQ4_XS)",
@@ -44,6 +56,7 @@ public class Gemma3: ModelSet {
 		minRam: 8,
 		minGpuTflops: 2.2,
 		mmluScore: 59.6, // TODO: Obtain scores for the instruction tuned model
+        intelligenceScore: 24,
 		modelFamily: .gemma3
 	)
 	
@@ -55,6 +68,7 @@ public class Gemma3: ModelSet {
 		minRam: 12,
 		minGpuTflops: 2.6,
 		mmluScore: 59.6, // TODO: Obtain scores for the instruction tuned model
+        intelligenceScore: 24,
 		modelFamily: .gemma3
 	)
 	
@@ -66,6 +80,7 @@ public class Gemma3: ModelSet {
 		minRam: 24,
 		minGpuTflops: 13.6,
 		mmluScore: 74.5, // TODO: Obtain scores for the instruction tuned model
+        intelligenceScore: 34,
 		modelFamily: .gemma3
 	)
 	
@@ -77,6 +92,7 @@ public class Gemma3: ModelSet {
 		minRam: 32,
 		minGpuTflops: 16.2,
 		mmluScore: 78.6, // TODO: Obtain scores for the instruction tuned model
+        intelligenceScore: 38,
 		modelFamily: .gemma3
 	)
 	

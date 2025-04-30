@@ -17,7 +17,8 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 		urlString: String,
 		minRam: Int,
 		minGpuTflops: Double,
-		mmluScore: Float,
+		mmluScore: Float? = nil,
+        intelligenceScore: Float? = nil,
 		specializations: [Specializations] = [],
 		modelFamily: ModelFamily
 	) {
@@ -27,6 +28,7 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 		self.minRam = minRam
 		self.minGpuTflops = minGpuTflops
 		self.mmluScore = mmluScore
+        self.intelligenceScore = intelligenceScore
 		self.specializations = specializations
 		self.modelFamily = modelFamily
 	}
@@ -52,7 +54,9 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 	public var minGpuTflops: Double
 	
 	/// Score in the MMLU benchmark, in type `Float`
-	public var mmluScore: Float
+	public var mmluScore: Float?
+    /// Overall intelligence core on `https://artificialanalysis.ai`, in type `Float`
+    public var intelligenceScore: Float?
 	
 	/// The model's family
 	public var modelFamily: ModelFamily
@@ -133,6 +137,7 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 		case mistralSmall = "Mistral Small"
 		case olmo2 = "OLMo 2"
 		case qwen2 = "Qwen 2"
+        case qwen3 = "Qwen 3"
 		case deepseekR1 = "DeepSeek R1"
 		
 	}
