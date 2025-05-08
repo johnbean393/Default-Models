@@ -29,9 +29,10 @@ public struct GPU: Identifiable {
 		.init(name: "Apple M3", tflops: 4.1),
 		.init(name: "Apple M3 Pro", tflops: 7.4),
 		.init(name: "Apple M3 Max", tflops: 16.2),
-		.init(name: "Apple M4", tflops: 4.6),
-		.init(name: "Apple M4 Pro", tflops: 9.2),
-		.init(name: "Apple M4 Max", tflops: 18.4),
+        .init(name: "Apple M3 Ultra", tflops: 32.4),
+        .init(name: "Apple M4", tflops: 4.6),
+        .init(name: "Apple M4 Pro", tflops: 9.2),
+        .init(name: "Apple M4 Max", tflops: 18.4),
 	].sorted(by: {
 		$0.tflops < $1.tflops
 	})
