@@ -15,6 +15,7 @@ public class DefaultModels {
 		Gemma2.self,
 		Gemma3.self,
 		Qwen2.self,
+        Qwen3.self,
 		MistralSmall.self,
 		Ministral.self,
 		EXAONE3.self,
