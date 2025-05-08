@@ -93,7 +93,7 @@ public class Qwen3: ModelSet {
         params: 14,
         urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-14B-GGUF/resolve/main/Qwen_Qwen3-14B-Q4_K_M.gguf",
         minRam: 24,
-        minGpuTflops: 13.6,
+        minGpuTflops: 7.4,
         intelligenceScore: 56,
         specializations: [.reasoning],
         modelFamily: .qwen3
@@ -117,7 +117,7 @@ public class Qwen3: ModelSet {
         params: 32,
         urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-32B-GGUF/resolve/main/Qwen_Qwen3-32B-Q4_K_M.gguf",
         minRam: 36,
-        minGpuTflops: 18.4,
+        minGpuTflops: 16.2,
         intelligenceScore: 59,
         specializations: [.reasoning],
         modelFamily: .qwen3

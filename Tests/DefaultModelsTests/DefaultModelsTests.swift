@@ -39,3 +39,8 @@ func listModels() async throws {
 		print(name)
 	}
 }
+
+@Test
+func getReccomendedModel() async throws {
+    await DefaultModels.checkModelRecommendations()
+}

@@ -93,7 +93,7 @@ public class Qwen2: ModelSet {
 		params: 14,
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-14B-Instruct-GGUF/resolve/main/Qwen2.5-14B-Instruct-IQ4_XS.gguf",
 		minRam: 24,
-		minGpuTflops: 13.6,
+        minGpuTflops: 7.4,
 		mmluScore: 79.7,
 		modelFamily: .qwen2
 	)
