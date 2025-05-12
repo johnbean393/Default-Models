@@ -43,7 +43,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_0pt6b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-0.6B",
         params: 0.6,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-0.6B-GGUF/resolve/main/Qwen_Qwen3-0.6B-Q8_0.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/main/Qwen3-0.6B-Q8_0.gguf",
         minRam: 8,
         minGpuTflops: 2.2,
         intelligenceScore: 23,
@@ -55,7 +55,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_1pt7b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-1.7B",
         params: 1.7,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-1.7B-GGUF/resolve/main/Qwen_Qwen3-1.7B-Q8_0.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q8_0.gguf",
         minRam: 8,
         minGpuTflops: 2.2,
         intelligenceScore: 38,
@@ -67,7 +67,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_4b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-4B",
         params: 4,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-4B-GGUF/resolve/main/Qwen_Qwen3-4B-Q6_K.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q6_K.gguf",
         minRam: 8,
         minGpuTflops: 2.6,
         intelligenceScore: 45,
@@ -79,7 +79,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_8b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-8B",
         params: 8,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF/resolve/main/Qwen_Qwen3-8B-Q6_K.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q6_K.gguf",
         minRam: 16,
         minGpuTflops: 5.3,
         intelligenceScore: 47,
@@ -91,7 +91,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_14b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-14B",
         params: 14,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-14B-GGUF/resolve/main/Qwen_Qwen3-14B-Q4_K_M.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/main/Qwen3-14B-Q4_K_M.gguf",
         minRam: 24,
         minGpuTflops: 7.4,
         intelligenceScore: 56,
@@ -103,7 +103,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_30b_a3b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-30B-A3B",
         params: 30,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-30B-A3B-GGUF/resolve/main/Qwen_Qwen3-30B-A3B-Q4_K_M.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/resolve/main/Qwen3-30B-A3B-Q4_K_M.gguf",
         minRam: 36,
         minGpuTflops: 4.1,
         intelligenceScore: 56,
@@ -115,7 +115,7 @@ public class Qwen3: ModelSet {
     private static let qwen3_32b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-32B",
         params: 32,
-        urlString: "https://huggingface.co/bartowski/Qwen_Qwen3-32B-GGUF/resolve/main/Qwen_Qwen3-32B-Q4_K_M.gguf",
+        urlString: "https://huggingface.co/Qwen/Qwen3-32B-GGUF/resolve/main/Qwen3-32B-Q4_K_M.gguf",
         minRam: 36,
         minGpuTflops: 16.2,
         intelligenceScore: 59,
