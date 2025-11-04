@@ -20,7 +20,8 @@ public class DefaultModels {
 		Ministral.self,
 		EXAONE3.self,
 		OLMo2.self,
-		DeepSeekR1.self
+		DeepSeekR1.self,
+        GPTOSS.self
 	]
 	
 	/// All default models that can be run by the device, in an array of `HuggingFaceModel`

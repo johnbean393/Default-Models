@@ -139,6 +139,7 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 		case qwen2 = "Qwen 2"
         case qwen3 = "Qwen 3"
 		case deepseekR1 = "DeepSeek R1"
+        case gptoss = "gpt-oss"
 		
 	}
 	
