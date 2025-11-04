@@ -33,6 +33,7 @@ public struct GPU: Identifiable {
         .init(name: "Apple M4", tflops: 4.6),
         .init(name: "Apple M4 Pro", tflops: 9.2),
         .init(name: "Apple M4 Max", tflops: 18.4),
+        .init(name: "Apple M5", tflops: 5.7),
 	].sorted(by: {
 		$0.tflops < $1.tflops
 	})

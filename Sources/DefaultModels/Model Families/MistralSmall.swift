@@ -42,7 +42,7 @@ public class MistralSmall: ModelSet {
 		minRam: 32,
 		minGpuTflops: 13.6,
 		mmluScore: 81,
-        intelligenceScore: 35,
+        intelligenceScore: 21,
 		modelFamily: .mistralSmall
 	)
     
@@ -54,7 +54,7 @@ public class MistralSmall: ModelSet {
         minRam: 32,
         minGpuTflops: 13.6,
         mmluScore: 81,
-        intelligenceScore: 35,
+        intelligenceScore: 23,
         modelFamily: .mistralSmall
     )
 	

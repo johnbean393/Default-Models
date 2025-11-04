@@ -44,7 +44,7 @@ public class Gemma3: ModelSet {
         urlString: "https://huggingface.co/bartowski/google_gemma-3-1b-it-GGUF/resolve/main/google_gemma-3-1b-it-Q8_0.gguf",
         minRam: 8,
         minGpuTflops: 2.2,
-        mmluScore: 59.6, // TODO: Obtain scores for the instruction tuned model
+        intelligenceScore: 7,
         modelFamily: .gemma3
     )
     
@@ -55,8 +55,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-4b-it-GGUF/resolve/main/google_gemma-3-4b-it-IQ4_XS.gguf",
 		minRam: 8,
 		minGpuTflops: 2.2,
-		mmluScore: 59.6, // TODO: Obtain scores for the instruction tuned model
-        intelligenceScore: 24,
+        intelligenceScore: 15,
 		modelFamily: .gemma3
 	)
 	
@@ -67,8 +66,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-4b-it-GGUF/resolve/main/google_gemma-3-4b-it-Q8_0.gguf",
 		minRam: 12,
 		minGpuTflops: 2.6,
-		mmluScore: 59.6, // TODO: Obtain scores for the instruction tuned model
-        intelligenceScore: 24,
+        intelligenceScore: 15,
 		modelFamily: .gemma3
 	)
 	
@@ -79,8 +77,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-12b-it-GGUF/resolve/main/google_gemma-3-12b-it-IQ4_XS.gguf",
 		minRam: 24,
 		minGpuTflops: 13.6,
-		mmluScore: 74.5, // TODO: Obtain scores for the instruction tuned model
-        intelligenceScore: 34,
+        intelligenceScore: 20,
 		modelFamily: .gemma3
 	)
 	
@@ -91,8 +88,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-27b-it-GGUF/resolve/main/google_gemma-3-27b-it-IQ4_XS.gguf",
 		minRam: 32,
 		minGpuTflops: 16.2,
-		mmluScore: 78.6, // TODO: Obtain scores for the instruction tuned model
-        intelligenceScore: 38,
+        intelligenceScore: 22,
 		modelFamily: .gemma3
 	)
 	

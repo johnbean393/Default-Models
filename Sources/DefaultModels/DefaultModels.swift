@@ -24,13 +24,16 @@ public class DefaultModels {
 	]
 	
 	/// All default models that can be run by the device, in an array of `HuggingFaceModel`
-	public static var models: [HuggingFaceModel] {
-		get async {
-			let onlineModels: [HuggingFaceModel] = await Self.getOnlineModels()
-			print("Retrieved \(onlineModels.count) models.")
-			return Array(Set(Self.hardcodedModels + onlineModels))
-		}
-	}
+    public static var models: [HuggingFaceModel] {
+        get async {
+            let onlineModels: [HuggingFaceModel] = await Self.getOnlineModels()
+            print("Retrieved \(onlineModels.count) models.")
+            
+            let allModels = Self.hardcodedModels + onlineModels
+            return Array(Dictionary(allModels.map { ($0.name, $0) },
+                                    uniquingKeysWith: { _, online in online }).values)
+        }
+    }
 	
 	/// All default hardcoded models that can be run by the device, in an array of `HuggingFaceModel`
 	public static var hardcodedModels: [HuggingFaceModel] {

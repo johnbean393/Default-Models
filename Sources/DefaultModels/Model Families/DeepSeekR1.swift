@@ -34,7 +34,8 @@ public class DeepSeekR1: ModelSet {
 		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_7b,
 		DeepSeekR1.deepseek_r1_distill_llama_3pt1_8b,
 		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_14b,
-		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_32b
+		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_32b,
+        DeepSeekR1.deepseek_r1_0528_qwen3_8b
 	]
 	
 	/// Static constant for the DeepSeek-R1 Distill Qwen 2.5 1.5B model
@@ -45,7 +46,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 8,
 		minGpuTflops: 2.2,
 		mmluScore: 60.9,
-        intelligenceScore: 19,
+        intelligenceScore: 7,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -70,7 +71,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 18,
 		minGpuTflops: 6.8,
 		mmluScore: 66.6,
-        intelligenceScore: 34,
+        intelligenceScore: 19,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -83,7 +84,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 24,
 		minGpuTflops: 16.2,
 		mmluScore: 79.7,
-        intelligenceScore: 49,
+        intelligenceScore: 30,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -96,9 +97,22 @@ public class DeepSeekR1: ModelSet {
 		minRam: 36,
 		minGpuTflops: 18.4,
 		mmluScore: 83.3,
-        intelligenceScore: 52,
+        intelligenceScore: 33,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
 	
+    /// Static contant for the DeepSeek-R1-0528-Qwen3-8B model
+    private static let deepseek_r1_0528_qwen3_8b: HuggingFaceModel = HuggingFaceModel(
+        name: "DeepSeek-R1-0528-Qwen3-8B",
+        params: 8,
+        urlString: "https://huggingface.co/unsloth/DeepSeek-R1-0528-Qwen3-8B-GGUF/resolve/main/DeepSeek-R1-0528-Qwen3-8B-Q4_K_M.gguf",
+        minRam: 18,
+        minGpuTflops: 6.8,
+        mmluScore: 66.6,
+        intelligenceScore: 52,
+        specializations: [.reasoning],
+        modelFamily: .deepseekR1
+    )
+    
 }

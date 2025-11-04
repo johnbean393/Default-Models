@@ -43,7 +43,7 @@ public class Llama3: ModelSet {
 		minRam: 18,
 		minGpuTflops: 6.8,
 		mmluScore: 66.6,
-        intelligenceScore: 24,
+        intelligenceScore: 17,
 		modelFamily: .llama3
 	)
 	
@@ -55,7 +55,7 @@ public class Llama3: ModelSet {
 		minRam: 8,
 		minGpuTflops: 2.2,
 		mmluScore: 49.3,
-        intelligenceScore: 10,
+        intelligenceScore: 7,
 		modelFamily: .llama3
 	)
 	
@@ -67,7 +67,7 @@ public class Llama3: ModelSet {
 		minRam: 16,
 		minGpuTflops: 3.5,
 		mmluScore: 63.4,
-        intelligenceScore: 20,
+        intelligenceScore: 11,
 		modelFamily: .llama3
 	)
 	

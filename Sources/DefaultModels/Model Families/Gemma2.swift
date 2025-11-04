@@ -54,7 +54,7 @@ public class Gemma2: ModelSet {
 		minRam: 16,
 		minGpuTflops: 7.4,
 		mmluScore: 52.2,
-        intelligenceScore: 22,
+        intelligenceScore: 8,
 		modelFamily: .gemma2
 	)
 	
@@ -65,7 +65,7 @@ public class Gemma2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/gemma-2-27b-it-GGUF/resolve/main/gemma-2-27b-it-IQ4_XS.gguf",
 		minRam: 32,
 		minGpuTflops: 16.2,
-		mmluScore: 52.2,
+        intelligenceScore: 32,
 		modelFamily: .gemma2
 	)
 	

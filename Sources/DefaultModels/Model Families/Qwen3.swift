@@ -30,39 +30,15 @@ public class Qwen3: ModelSet {
     
     /// An array of `Qwen 3` models, of type ``HuggingFaceModel``
     public static let models: [HuggingFaceModel] = [
-        Qwen3.qwen3_0pt6b,
-        Qwen3.qwen3_1pt7b,
         Qwen3.qwen3_4b,
+        Qwen3.qwen3_4b_instruct_2507,
+        Qwen3.qwen3_4b_thinking_2507,
         Qwen3.qwen3_8b,
-        Qwen3.qwen3_14b,
-        Qwen3.qwen3_30b_a3b,
-        Qwen3.qwen3_32b
+        Qwen3.qwen3_30b_a3b_instruct_2507,
+        Qwen3.qwen3_30b_a3b_thinking_2507,
+        Qwen3.qwen3_32b,
     ]
-    
-    /// Static constant for the Qwen 3 0.6B model
-    private static let qwen3_0pt6b: HuggingFaceModel = HuggingFaceModel(
-        name: "Qwen3-0.6B",
-        params: 0.6,
-        urlString: "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/main/Qwen3-0.6B-Q8_0.gguf",
-        minRam: 8,
-        minGpuTflops: 2.2,
-        intelligenceScore: 23,
-        specializations: [.reasoning],
-        modelFamily: .qwen3
-    )
-    
-    /// Static constant for the Qwen 3 1.7B model
-    private static let qwen3_1pt7b: HuggingFaceModel = HuggingFaceModel(
-        name: "Qwen3-1.7B",
-        params: 1.7,
-        urlString: "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q8_0.gguf",
-        minRam: 8,
-        minGpuTflops: 2.2,
-        intelligenceScore: 38,
-        specializations: [.reasoning],
-        modelFamily: .qwen3
-    )
-    
+
     /// Static constant for the Qwen 3 4B model
     private static let qwen3_4b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-4B",
@@ -75,6 +51,30 @@ public class Qwen3: ModelSet {
         modelFamily: .qwen3
     )
     
+    /// Static constant for the Qwen 3 4B Instruct 2507 model
+    private static let qwen3_4b_instruct_2507: HuggingFaceModel = HuggingFaceModel(
+        name: "Qwen3-4B-Instruct-2507",
+        params: 4,
+        urlString: "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/main/Qwen3-4B-Instruct-2507-Q6_K.gguf",
+        minRam: 8,
+        minGpuTflops: 2.6,
+        intelligenceScore: 30,
+        specializations: [],
+        modelFamily: .qwen3
+    )
+    
+    /// Static constant for the Qwen 3 4B Thinking 2507 model
+    private static let qwen3_4b_thinking_2507: HuggingFaceModel = HuggingFaceModel(
+        name: "Qwen3-4B-Thinking-2507",
+        params: 4,
+        urlString: "https://huggingface.co/unsloth/Qwen3-4B-Thinking-2507-GGUF/resolve/main/Qwen3-4B-Thinking-2507-Q6_K.gguf",
+        minRam: 8,
+        minGpuTflops: 2.6,
+        intelligenceScore: 43,
+        specializations: [.reasoning],
+        modelFamily: .qwen3
+    )
+    
     /// Static constant for the Qwen 3 8B model
     private static let qwen3_8b: HuggingFaceModel = HuggingFaceModel(
         name: "Qwen3-8B",
@@ -82,31 +82,31 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q6_K.gguf",
         minRam: 16,
         minGpuTflops: 5.3,
-        intelligenceScore: 47,
+        intelligenceScore: 41,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
     
-    /// Static constant for the Qwen 3 14B model
-    private static let qwen3_14b: HuggingFaceModel = HuggingFaceModel(
-        name: "Qwen3-14B",
-        params: 14,
-        urlString: "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/main/Qwen3-14B-Q4_K_M.gguf",
-        minRam: 24,
-        minGpuTflops: 7.4,
-        intelligenceScore: 56,
-        specializations: [.reasoning],
-        modelFamily: .qwen3
-    )
-    
-    /// Static constant for the Qwen 3 30B-A3B model
-    private static let qwen3_30b_a3b: HuggingFaceModel = HuggingFaceModel(
-        name: "Qwen3-30B-A3B",
+    /// Static constant for the Qwen 3 30B-A3B Instruct 2507 model
+    private static let qwen3_30b_a3b_instruct_2507: HuggingFaceModel = HuggingFaceModel(
+        name: "Qwen3-30B-A3B-Instruct-2507",
         params: 30,
-        urlString: "https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/resolve/main/Qwen3-30B-A3B-Q4_K_M.gguf",
+        urlString: "https://huggingface.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF/resolve/main/Qwen3-30B-A3B-Instruct-2507-Q4_K_M.gguf",
         minRam: 36,
         minGpuTflops: 4.1,
-        intelligenceScore: 56,
+        intelligenceScore: 37,
+        specializations: [],
+        modelFamily: .qwen3
+    )
+    
+    /// Static constant for the Qwen 3 30B-A3B Thinking 2507 model
+    private static let qwen3_30b_a3b_thinking_2507: HuggingFaceModel = HuggingFaceModel(
+        name: "Qwen3-30B-A3B-Thinking-2507",
+        params: 30,
+        urlString: "https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF/resolve/main/Qwen3-30B-A3B-Thinking-2507-Q4_K_M.gguf",
+        minRam: 36,
+        minGpuTflops: 4.1,
+        intelligenceScore: 46,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
