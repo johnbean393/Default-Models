@@ -109,7 +109,7 @@ public class DefaultModels {
 	///   - ramSize: The amount of RAM in the device, in type `Int`
 	///   - gpuCoreCount: The number of GPU cores in the device, in type `Int`
 	/// - Returns: The reccomended model for the device, in type ``HuggingFaceModel``
-	private static func getReccomendedModelForSpecs(
+	public static func getReccomendedModelForSpecs(
 		ramSize: Int,
 		gpuTflops: Double
 	) async -> HuggingFaceModel {
@@ -120,11 +120,12 @@ public class DefaultModels {
 			$0.minRam < $1.minRam
 		}).first!
 		// Get top end model that can be run
-		if let maxModel: HuggingFaceModel = models.filter({
-			$0.canRun(
-				unifiedMemorySize: ramSize,
-				gpuTflops: gpuTflops
-			)
+		if let maxModel: HuggingFaceModel = models.filter({ model in
+            let canRun = model.canRun(
+                unifiedMemorySize: ramSize,
+                gpuTflops: gpuTflops
+            )
+            return canRun
         }).filter({ model in
             model.intelligenceScore != nil
         }).sorted(by: {

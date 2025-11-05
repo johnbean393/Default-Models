@@ -40,6 +40,17 @@ func listModels() async throws {
 }
 
 @Test
-func getReccomendedModel() async throws {
+func getReccomendedModels() async throws {
     await DefaultModels.checkModelRecommendations()
+}
+
+@Test
+func getReccomendedModel() async throws {
+    let ramSize: Int = 16
+    let gpuTflops: Double = 4.1
+    let model: HuggingFaceModel = await DefaultModels.getReccomendedModelForSpecs(
+        ramSize: ramSize,
+        gpuTflops: gpuTflops
+    )
+    print("A Mac with \(ramSize) GB of RAM and \(gpuTflops) GPU TFLOPS is recommended to use \(model.name).")
 }
