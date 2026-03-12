@@ -30,73 +30,11 @@ public class Qwen2: ModelSet {
 	
 	/// An array of `Qwen 2` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
-		Qwen2.qwen_2Pt5_1pt5b,
-		Qwen2.qwen_2pt5_3b_q4,
-		Qwen2.qwen_2pt5_3b_q8,
-		Qwen2.qwen_2pt5_7b,
-		Qwen2.qwen_2pt5_14b,
 		Qwen2.qwen_2pt5_32b,
 		Qwen2.qwen_2pt5_7b_coder,
-		Qwen2.qwen_2pt5_14b_coder,
 		Qwen2.qwen_2pt5_32b_coder,
-		Qwen2.qwen_2pt5_7b_math,
 		Qwen2.qwq_32b
 	]
-	
-	/// Static constant for the Qwen 2.5 1.5B model
-	private static let qwen_2Pt5_1pt5b: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-1.5B-Instruct",
-		params: 1.5,
-		urlString: "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q8_0.gguf",
-		minRam: 8,
-		minGpuTflops: 2.2,
-		mmluScore: 60.9,
-		modelFamily: .qwen2
-	)
-	
-	/// Static constant for the Qwen 2.5 3B model at 4 bit quantization
-	private static let qwen_2pt5_3b_q4: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-3B-Instruct (IQ4_XS)",
-		params: 3,
-		urlString: "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-IQ4_XS.gguf",
-		minRam: 8,
-		minGpuTflops: 2.2,
-		mmluScore: 65.6,
-		modelFamily: .qwen2
-	)
-	
-	/// Static constant for the Qwen 2.5 3B model at 8 bit quantization
-	private static let qwen_2pt5_3b_q8: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-3B-Instruct (Q8_0)",
-		params: 3,
-		urlString: "https://huggingface.co/bartowski/Qwen2.5-3B-Instruct-GGUF/resolve/main/Qwen2.5-3B-Instruct-Q8_0.gguf",
-		minRam: 12,
-		minGpuTflops: 2.6,
-		mmluScore: 65.6,
-		modelFamily: .qwen2
-	)
-	
-	/// Static constant for the Qwen 2.5 7B model
-	private static let qwen_2pt5_7b: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-7B-Instruct",
-		params: 7,
-		urlString: "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q8_0.gguf",
-		minRam: 16,
-		minGpuTflops: 5.3,
-		mmluScore: 70.3,
-		modelFamily: .qwen2
-	)
-	
-	/// Static constant for the Qwen 2.5 14B model
-	private static let qwen_2pt5_14b: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-14B-Instruct",
-		params: 14,
-		urlString: "https://huggingface.co/bartowski/Qwen2.5-14B-Instruct-GGUF/resolve/main/Qwen2.5-14B-Instruct-IQ4_XS.gguf",
-		minRam: 24,
-        minGpuTflops: 7.4,
-		mmluScore: 79.7,
-		modelFamily: .qwen2
-	)
 	
 	/// Static constant for the Qwen 2.5 32B model
 	private static let qwen_2pt5_32b: HuggingFaceModel = HuggingFaceModel(
@@ -105,7 +43,7 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF/resolve/main/Qwen2.5-32B-Instruct-IQ4_XS.gguf",
 		minRam: 36,
 		minGpuTflops: 18.4,
-        intelligenceScore: 23,
+        intelligenceScore: 13,
 		modelFamily: .qwen2
 	)
 	
@@ -117,19 +55,7 @@ public class Qwen2: ModelSet {
 		minRam: 16,
         minGpuTflops: 5.3,
 		mmluScore: 70.3,
-        intelligenceScore: 12,
-		specializations: [.coding],
-		modelFamily: .qwen2
-	)
-	
-	/// Static constant for the Qwen 2.5 14B Coder model
-	private static let qwen_2pt5_14b_coder: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-Coder-14B-Instruct",
-		params: 14,
-		urlString: "https://huggingface.co/bartowski/Qwen2.5-Coder-14B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-14B-Instruct-IQ4_XS.gguf",
-		minRam: 24,
-        minGpuTflops: 13.6,
-		mmluScore: 79.7,
+        intelligenceScore: 10,
 		specializations: [.coding],
 		modelFamily: .qwen2
 	)
@@ -141,20 +67,8 @@ public class Qwen2: ModelSet {
 		urlString: "https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-32B-Instruct-IQ4_XS.gguf",
 		minRam: 36,
 		minGpuTflops: 16.2,
-        intelligenceScore: 22,
+        intelligenceScore: 13,
 		specializations: [.coding],
-		modelFamily: .qwen2
-	)
-	
-	/// Static constant for the Qwen 2.5 7B Math model
-	private static let qwen_2pt5_7b_math: HuggingFaceModel = HuggingFaceModel(
-		name: "Qwen2.5-Math-7B-Instruct",
-		params: 7,
-		urlString: "https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/resolve/main/Qwen2.5-Math-7B-Instruct-Q8_0.gguf",
-		minRam: 16,
-		minGpuTflops: 6.7,
-		mmluScore: 70.3,
-		specializations: [.math],
 		modelFamily: .qwen2
 	)
 	
@@ -166,7 +80,7 @@ public class Qwen2: ModelSet {
 		minRam: 36,
 		minGpuTflops: 16.2,
 		mmluScore: 83.3,
-        intelligenceScore: 38,
+        intelligenceScore: 20,
 		specializations: [.reasoning],
 		modelFamily: .qwen2
 	)

@@ -40,7 +40,7 @@ public class GPTOSS: ModelSet {
         urlString: "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF/resolve/main/openai_gpt-oss-20b-MXFP4.gguf",
         minRam: 16,
         minGpuTflops: 4.1,
-        intelligenceScore: 52,
+        intelligenceScore: 24,
         specializations: [.reasoning],
         modelFamily: .gptoss
     )

@@ -41,6 +41,7 @@ public class Ministral: ModelSet {
 		minRam: 18,
 		minGpuTflops: 6.8,
 		mmluScore: 65.0,
+        intelligenceScore: 15,
 		modelFamily: .ministral
 	)
 	

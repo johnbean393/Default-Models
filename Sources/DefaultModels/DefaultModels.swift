@@ -12,14 +12,12 @@ public class DefaultModels {
 	/// An array of model families, conforming to ``ModelSet``
 	public static let modelFamilies: [any ModelSet.Type] = [
 		Llama3.self,
-		Gemma2.self,
 		Gemma3.self,
 		Qwen2.self,
         Qwen3.self,
+        Qwen3Pt5.self,
 		MistralSmall.self,
 		Ministral.self,
-		EXAONE3.self,
-		OLMo2.self,
 		DeepSeekR1.self,
         GPTOSS.self
 	]

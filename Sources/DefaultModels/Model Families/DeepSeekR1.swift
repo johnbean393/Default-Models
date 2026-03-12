@@ -31,7 +31,6 @@ public class DeepSeekR1: ModelSet {
 	/// An array of `DeepSeek R1` models, of type ``HuggingFaceModel``
 	public static let models: [HuggingFaceModel] = [
 		DeepSeekR1.deepseek_r1_distill_qwen_2Pt5_1pt5b,
-		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_7b,
 		DeepSeekR1.deepseek_r1_distill_llama_3pt1_8b,
 		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_14b,
 		DeepSeekR1.deepseek_r1_distill_qwen_2pt5_32b,
@@ -46,19 +45,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 8,
 		minGpuTflops: 2.2,
 		mmluScore: 60.9,
-        intelligenceScore: 7,
-		specializations: [.reasoning],
-		modelFamily: .deepseekR1
-	)
-	
-	/// Static constant for the DeepSeek-R1 Distill Qwen 2.5 7B model
-	private static let deepseek_r1_distill_qwen_2pt5_7b: HuggingFaceModel = HuggingFaceModel(
-		name: "DeepSeek-R1-Distill-Qwen-7B",
-		params: 7,
-		urlString: "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-7B-Q8_0.gguf",
-		minRam: 16,
-		minGpuTflops: 5.3,
-		mmluScore: 70.3,
+        intelligenceScore: 9,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -71,7 +58,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 18,
 		minGpuTflops: 6.8,
 		mmluScore: 66.6,
-        intelligenceScore: 19,
+        intelligenceScore: 12,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -84,7 +71,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 24,
 		minGpuTflops: 16.2,
 		mmluScore: 79.7,
-        intelligenceScore: 30,
+        intelligenceScore: 16,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -97,7 +84,7 @@ public class DeepSeekR1: ModelSet {
 		minRam: 36,
 		minGpuTflops: 18.4,
 		mmluScore: 83.3,
-        intelligenceScore: 33,
+        intelligenceScore: 17,
 		specializations: [.reasoning],
 		modelFamily: .deepseekR1
 	)
@@ -110,7 +97,7 @@ public class DeepSeekR1: ModelSet {
         minRam: 18,
         minGpuTflops: 6.8,
         mmluScore: 66.6,
-        intelligenceScore: 52,
+        intelligenceScore: 16,
         specializations: [.reasoning],
         modelFamily: .deepseekR1
     )

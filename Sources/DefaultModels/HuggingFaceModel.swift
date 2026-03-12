@@ -129,15 +129,13 @@ public struct HuggingFaceModel: Codable, Hashable, Identifiable {
 	/// The model's family
 	public enum ModelFamily: String, CaseIterable, Codable {
 		
-		case exaone3 = "EXAONE 3"
-		case gemma2 = "Gemma 2"
 		case gemma3 = "Gemma 3"
 		case llama3 = "Llama 3"
 		case ministral = "Ministral"
 		case mistralSmall = "Mistral Small"
-		case olmo2 = "OLMo 2"
 		case qwen2 = "Qwen 2"
         case qwen3 = "Qwen 3"
+        case qwen3Pt5 = "Qwen 3.5"
 		case deepseekR1 = "DeepSeek R1"
         case gptoss = "gpt-oss"
 		

@@ -44,7 +44,7 @@ public class Gemma3: ModelSet {
         urlString: "https://huggingface.co/bartowski/google_gemma-3-1b-it-GGUF/resolve/main/google_gemma-3-1b-it-Q8_0.gguf",
         minRam: 8,
         minGpuTflops: 2.2,
-        intelligenceScore: 7,
+        intelligenceScore: 6,
         modelFamily: .gemma3
     )
     
@@ -55,7 +55,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-4b-it-GGUF/resolve/main/google_gemma-3-4b-it-IQ4_XS.gguf",
 		minRam: 8,
 		minGpuTflops: 2.2,
-        intelligenceScore: 15,
+        intelligenceScore: 6,
 		modelFamily: .gemma3
 	)
 	
@@ -66,7 +66,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-4b-it-GGUF/resolve/main/google_gemma-3-4b-it-Q8_0.gguf",
 		minRam: 12,
 		minGpuTflops: 2.6,
-        intelligenceScore: 15,
+        intelligenceScore: 6,
 		modelFamily: .gemma3
 	)
 	
@@ -77,7 +77,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-12b-it-GGUF/resolve/main/google_gemma-3-12b-it-IQ4_XS.gguf",
 		minRam: 24,
 		minGpuTflops: 13.6,
-        intelligenceScore: 20,
+        intelligenceScore: 9,
 		modelFamily: .gemma3
 	)
 	
@@ -88,7 +88,7 @@ public class Gemma3: ModelSet {
 		urlString: "https://huggingface.co/bartowski/google_gemma-3-27b-it-GGUF/resolve/main/google_gemma-3-27b-it-IQ4_XS.gguf",
 		minRam: 32,
 		minGpuTflops: 16.2,
-        intelligenceScore: 22,
+        intelligenceScore: 10,
 		modelFamily: .gemma3
 	)
 	

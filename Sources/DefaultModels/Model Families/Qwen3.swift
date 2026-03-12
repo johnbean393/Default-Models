@@ -46,7 +46,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q6_K.gguf",
         minRam: 8,
         minGpuTflops: 2.6,
-        intelligenceScore: 45,
+        intelligenceScore: 14,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
@@ -58,7 +58,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF/resolve/main/Qwen3-4B-Instruct-2507-Q6_K.gguf",
         minRam: 8,
         minGpuTflops: 2.6,
-        intelligenceScore: 30,
+        intelligenceScore: 13,
         specializations: [],
         modelFamily: .qwen3
     )
@@ -70,7 +70,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/unsloth/Qwen3-4B-Thinking-2507-GGUF/resolve/main/Qwen3-4B-Thinking-2507-Q6_K.gguf",
         minRam: 8,
         minGpuTflops: 2.6,
-        intelligenceScore: 43,
+        intelligenceScore: 18,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
@@ -82,7 +82,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q6_K.gguf",
         minRam: 16,
         minGpuTflops: 5.3,
-        intelligenceScore: 41,
+        intelligenceScore: 13,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
@@ -94,7 +94,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF/resolve/main/Qwen3-30B-A3B-Instruct-2507-Q4_K_M.gguf",
         minRam: 36,
         minGpuTflops: 4.1,
-        intelligenceScore: 37,
+        intelligenceScore: 15,
         specializations: [],
         modelFamily: .qwen3
     )
@@ -106,7 +106,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/unsloth/Qwen3-30B-A3B-Thinking-2507-GGUF/resolve/main/Qwen3-30B-A3B-Thinking-2507-Q4_K_M.gguf",
         minRam: 36,
         minGpuTflops: 4.1,
-        intelligenceScore: 46,
+        intelligenceScore: 22,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
@@ -118,7 +118,7 @@ public class Qwen3: ModelSet {
         urlString: "https://huggingface.co/Qwen/Qwen3-32B-GGUF/resolve/main/Qwen3-32B-Q4_K_M.gguf",
         minRam: 36,
         minGpuTflops: 16.2,
-        intelligenceScore: 59,
+        intelligenceScore: 17,
         specializations: [.reasoning],
         modelFamily: .qwen3
     )
