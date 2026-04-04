@@ -43,7 +43,7 @@ public class Gemma3: ModelSet {
         params: 4,
         urlString: "https://huggingface.co/bartowski/google_gemma-3-1b-it-GGUF/resolve/main/google_gemma-3-1b-it-Q8_0.gguf",
         minRam: 8,
-        minGpuTflops: 2.2,
+        minGpuTflops: 1,
         intelligenceScore: 6,
         modelFamily: .gemma3
     )

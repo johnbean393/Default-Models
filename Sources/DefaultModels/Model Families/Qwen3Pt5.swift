@@ -44,7 +44,7 @@ public class Qwen3Pt5: ModelSet {
         params: 0.8,
         urlString: "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q4_K_M.gguf",
         minRam: 8,
-        minGpuTflops: 2.2,
+        minGpuTflops: 1,
         intelligenceScore: 11,
         modelFamily: .qwen3Pt5
     )
@@ -55,7 +55,7 @@ public class Qwen3Pt5: ModelSet {
         params: 2,
         urlString: "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/Qwen3.5-2B-Q4_K_M.gguf",
         minRam: 8,
-        minGpuTflops: 2.2,
+        minGpuTflops: 1,
         intelligenceScore: 16,
         modelFamily: .qwen3Pt5
     )

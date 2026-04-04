@@ -43,7 +43,7 @@ public class DeepSeekR1: ModelSet {
 		params: 1.5,
 		urlString: "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF/resolve/main/DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf",
 		minRam: 8,
-		minGpuTflops: 2.2,
+        minGpuTflops: 1,
 		mmluScore: 60.9,
         intelligenceScore: 9,
 		specializations: [.reasoning],
