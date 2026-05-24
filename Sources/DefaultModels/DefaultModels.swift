@@ -17,6 +17,7 @@ public class DefaultModels {
 		Qwen2.self,
         Qwen3.self,
         Qwen3Pt5.self,
+        Qwen3Pt6.self,
 		MistralSmall.self,
 		Ministral.self,
 		DeepSeekR1.self,
